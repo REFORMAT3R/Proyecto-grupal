@@ -143,6 +143,10 @@ form input[type="submit"]:hover {
 }
 
 
+#contacto h2{
+  text-align: left;
+
+}
 #contacto a {
   color: #b83b2d;
   text-decoration: none;
@@ -183,4 +187,14 @@ footer span {
   main section {
     padding: 20px;
   }
+}
+#Gracias p{
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#enlace-inicio a{
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
