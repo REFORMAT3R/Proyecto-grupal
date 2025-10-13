@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Trajes Típicos Arequipeños</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Tienda de Trajes Típicos Arequipeños</h1>
+    <!--Aumentar el logo de la tienda :D-->
+    <img src="logo de la tienda" alt="Logo de la tienda" width="150">
+    
+    <nav>
+      <ul>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#trajes">Trajes</a></li>
+        <li><a href="#formulario">Alquiler</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sobre Nosotros -->
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <article>
+        <p>
+          En <strong>Tienda de Trajes Típicos Arequipeños</strong> ofrecemos una amplia variedad 
+          de trajes tradicionales para las principales danzas de nuestra región. 
+          Contamos con diseños auténticos, bordados a mano y adaptados a cada festividad.
+        </p>
+        <!--aumentar imagenes de danzas arequipeñas-->
+        <img src="imagen de wititi :D" alt="Traje de danza Wititi" width="300">
+        <img src="imagen de montonero arequipeño o nose :D" alt="Traje de danza Turku" width="300">
+      </article>
+    </section>
+
+    <section id="trajes">
+      <h2>Tipos de Danzas y Trajes</h2>
+      <h3>Danzas Arequipeñas</h3>
+      <ul>
+        <li>Wititi</li>
+        <li>Turku</li>
+        <li>Carnaval de Arequipa</li>
+        <li>Pampeña</li>
+        <li>Añu tarpuy</li>
+        <li>Los negrillos de Chivay</li>
+        <li>Montonero arequipeño</li>
+      </ul>
+
+      <h3>Pasos para alquilar un traje</h3>
+      <ol>
+        <li>Eliga los trajes de la danza deseada.</li>
+        <li>Completa el formulario de reserva.</li>
+        <li>Recoge tu traje en tienda o solicita envío.</li>
+      </ol>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario">
+      <h2>Formulario de Alquiler</h2>
+      <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        <br><br>
+
+        <label for="celular">Número de celular:</label>
+        <input type="tel" id="celular" name="celular" placeholder="Ej: 987654321" pattern="[0-9]{9}" required>
+        <br><br>
+
+        <label for="danza">Tipo de danza:</label>
+        <select id="danza" name="danza" required>
+          <option>Wititi</option>
+          <option>Turku</option>
+          <option>Carnaval de Arequipa</option>
+          <option>Pampeña</option>
+          <option>Añu tarpuy</option>
+          <option>Los negrillos de Chivay</option>
+          <option>Montonero arequipeño</option>
+        </select>
+        <br><br>
+
+        <label for="parejas">Cantidad de parejas:</label>
+        <input type="number" id="parejas" name="parejas" required>
+        <br><br>
+
+        <label for="fecha">Fecha de alquiler:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <!--Parte de "contactanos"-->
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>Visítanos en <em>Arequipa, Perú</em> o síguenos en nuestras redes:</p>
+      <!--Aumentar las redes sociales-->
+      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+      <a href="https://www.muniarequipa.gob.pe" target="_blank">Municipalidad de Arequipa</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Calle Mercaderes 123, Arequipa | Tel: (054) 456789</p>
+    <div>
+      <span>&copy; 2025 Tienda de Trajes Típicos Arequipeños</span>
+    </div>
+  </footer>
+</body>
+</html>
