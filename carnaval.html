@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carnaval de Arequipa</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnaval de Arequipa</title>
+  <link rel="stylesheet" href="nuevostyles.css">
 </head>
 <body>
-    <img src="imagenes/carnaval de arequipa.jpeg" width="550px">
-    <div class="informacion">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="title">Alquiler y venta de trajes</h1>
+      <img src="imagenes/Logo-tienda.png" alt="Logo de la tienda" class="logo">
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="nuevoindex.html">Sobre Nosotros</a></li>
+        <li><a href="trajes.html">Trajes</a></li>
+        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-container">
+    <section class="section-container">
+      <div class="text-content">
+        <img src="imagenes/carnaval de arequipa.jpeg" alt="Carnaval de Arequipa" class="danza-imagen">
         <h1>Carnaval de Arequipa</h1>
         <p>El Carnaval de Arequipa es una de las festividades más alegres y coloridas del sur del Perú, 
-        donde se celebra la identidad, el amor y la alegría del pueblo arequipeño. Su traje típico 
-        destaca por su gran vistosidad: las mujeres visten blusas bordadas, faldas amplias y coloridas 
-        con cintas y encajes, además de sombreros adornados con flores y pañuelos; mientras que los varones 
-        lucen camisas blancas, pantalones oscuros, fajas de colores vivos y sombreros tradicionales. 
-        Este traje refleja la energía, la tradición y el espíritu festivo que caracterizan al Carnaval arequipeño.</p>
-    </div>
-    
-    <div class="precios">
-        <p><strong>Precio de alquiler:</strong>S/25<br>
-        <Strong>Precio de venta: </Strong>S/120</p>
-    </div>
-    <br><br>
+           donde se celebra la identidad, el amor y la alegría del pueblo arequipeño. Su traje típico 
+           destaca por su gran vistosidad: las mujeres visten blusas bordadas, faldas amplias y coloridas 
+           con cintas y encajes, además de sombreros adornados con flores y pañuelos; mientras que los varones 
+           lucen camisas blancas, pantalones oscuros, fajas de colores vivos y sombreros tradicionales. 
+           Este traje refleja la energía, la tradición y el espíritu festivo que caracterizan al Carnaval arequipeño.</p>
 
-    <div class="boton-fomulario">
-        <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
-    </div>
-    <br><br>
-    
-    <!--Parte de "contactanos"-->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Visítanos en <em>Arequipa, Perú</em> o síguenos en nuestras redes:</p>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="Koketacce@gnail.com" target="_blank">Gmail</a>
-    </section>
+        <p class="precio-alquiler"><strong>Precio de alquiler:</strong> S/25</p>
+        <p class="precio-venta"><strong>Precio de venta:</strong> S/120</p>
 
-    <footer>
-        <p>Avenída Jesús 2204 | Tel: +51 940 764 838</p>
-        <div>
-        <span>&copy; 2025 Tienda de Trajes</span>
+        <div class="boton-fomulario">
+          <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
         </div>
-    </footer>
-    
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Avenida Jesús 2204 | Tel: +51 940 764 838</p>
+    <span>&copy; 2025 Tienda de Trajes</span>
+  </footer>
 </body>
 </html>

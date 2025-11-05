@@ -1,0 +1,239 @@
+/* --- RESET Y TIPOGRAFÍA --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- HEADER --- */
+.header {
+  background-color: #b83b2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header .title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.header .logo {
+  border-radius: 10px;
+  width: 120px;
+  transition: transform 0.3s;
+}
+
+.header .logo:hover {
+  transform: scale(1.1);
+}
+
+/* --- NAV --- */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #8c2b21;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin: 15px auto 0 auto;
+  max-width: 800px;
+  width: auto;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.nav-list li a:hover {
+  background-color: white;
+  color: #8c2b21;
+}
+
+/* --- MAIN --- */
+.main-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+}
+
+/* --- SECCIONES GENÉRICAS --- */
+.section-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.section-title {
+  color: #8c2b21;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* --- ARTÍCULOS --- */
+.article-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.text-content {
+  font-size: 0.95em;
+  line-height: 1.8;
+  margin-bottom: 20px;  
+  padding: 10px;           
+}
+
+/* --- IMÁGENES --- */
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;                 
+  align-items: flex-start;
+}
+
+.image-item {
+  border-radius: 10px;
+  height: 300px;            
+  width: auto;
+  object-fit: cover;
+}
+
+.danza-imagen {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto 15px auto; /* centrada */
+}
+/* --- FOOTER --- */
+.footer {
+  background-color: #8c2b21;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* --- FORMULARIOS --- */
+
+#formulario {
+  max-width: 600px;      
+  margin: 40px auto;    
+  padding: 20px;         
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#formulario h2 {
+  text-align: center;    
+  color: #8c2b21;
+  margin-bottom: 25px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form select:focus {
+  border-color: #b83b2d;
+  outline: none;
+}
+
+.boton-fomulario input[type="button"] {
+  background-color: #ff3700; /* color llamativo */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s; /* transición más suave solo en color */
+  display: block;
+  margin: 20px auto;
+}
+
+.boton-fomulario input[type="button"]:hover {
+  background-color: #e65800; /* solo cambia color al pasar el mouse */
+}
+
+/* --- LINKS --- */
+a {
+  color: #b83b2d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #8c2b21;
+  text-decoration: underline;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .logo {
+    width: 120px;
+  }
+
+  .main-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-item {
+    max-width: 90%;
+    width: auto;
+  }
+}

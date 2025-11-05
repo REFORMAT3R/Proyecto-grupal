@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinkus</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinkus - Alquiler y venta de trajes</title>
+  <link rel="stylesheet" href="nuevostyles.css">
 </head>
 <body>
-    <img src="imagenes/tinkus.jpeg" width="375px">
-    <div class="informacion">
-        <h1>Tinkus</h1>
-        <p>El Tinku es una danza de origen andino que representa 
-            los antiguos encuentros rituales entre comunidades del 
-            altiplano, donde se mezclaban el enfrentamiento, la fuerza y 
-            la hermandad. Con el tiempo, se transformó en una expresión 
-            artística llena de energía, ritmo y color. El traje típico es 
-            vibrante y elaborado: los hombres visten ponchos o chaquetas 
-            bordadas, pantalones de colores, botas con cascabeles y cascos 
-            decorados con plumas; las mujeres lucen polleras amplias, blusas 
-            bordadas, mantas y sombreros adornados. Este traje refleja la 
-            vitalidad, la tradición y el espíritu guerrero y festivo del pueblo andino.</p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <h1 class="title">Alquiler y venta de trajes</h1>
+      <img src="imagenes/Logo-tienda.png" alt="Logo de la tienda" class="logo">
     </div>
-    
-    <div class="precios">
-        <p><strong>Precio de alquiler:</strong>S/15<br>
-        <Strong>Precio de venta: </Strong>S/75</p>
-    </div>
-    <br><br>
 
-    <div class="boton-fomulario">
-        <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
-    </div>
-    <br><br>
-    
-    <!--Parte de "contactanos"-->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Visítanos en <em>Arequipa, Perú</em> o síguenos en nuestras redes:</p>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="Koketacce@gnail.com" target="_blank">Gmail</a>
+    <!-- NAV -->
+    <nav>
+      <ul class="nav-list">
+        <li><a href="nuevoindex.html">Sobre Nosotros</a></li>
+        <li><a href="trajes.html">Trajes</a></li>
+        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-container">
+    <section class="section-container">
+      <h2 class="section-title">Tinkus</h2>
+      <div class="article-container">
+        <div class="text-content">
+          <img src="imagenes/tinkus.jpeg" alt="Tinkus" class="danza-imagen">
+          <p>El Tinku es una danza de origen andino que representa 
+             los antiguos encuentros rituales entre comunidades del 
+             altiplano, donde se mezclaban el enfrentamiento, la fuerza y 
+             la hermandad. Con el tiempo, se transformó en una expresión 
+             artística llena de energía, ritmo y color. El traje típico es 
+             vibrante y elaborado: los hombres visten ponchos o chaquetas 
+             bordadas, pantalones de colores, botas con cascabeles y cascos 
+             decorados con plumas; las mujeres lucen polleras amplias, blusas 
+             bordadas, mantas y sombreros adornados. Este traje refleja la 
+             vitalidad, la tradición y el espíritu guerrero y festivo del pueblo andino.</p>
+
+          <p><strong>Precio de alquiler:</strong> S/15<br>
+             <strong>Precio de venta:</strong> S/75</p>
+
+          <div class="boton-fomulario">
+            <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>Avenída Jesús 2204 | Tel: +51 940 764 838</p>
-        <div>
-        <span>&copy; 2025 Tienda de Trajes</span>
-        </div>
-    </footer>
-    
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Avenida Jesús 2204 | Tel: +51 940 764 838</p>
+    <span>&copy; 2025 Tienda de Trajes</span>
+  </footer>
 </body>
 </html>
