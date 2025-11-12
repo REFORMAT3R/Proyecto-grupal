@@ -169,7 +169,7 @@ header { display: flex; flex-direction: column; }
 
 .faq-item-text-content h3 {
   color: #7A1C1E;
-  font-size: 30px;
+  font-size: 35px;
   padding: 20px;
 }
 
@@ -214,4 +214,15 @@ footer p {
 #trajes .article-container {
   width: 600px;
   margin: 10px;
+}
+#trajes .faq-item-text-content{
+  padding: 40px;
+}
+#trajes ol,  #trajes li {
+  font-size: 25px; 
+  color: #1E293B;
+  line-height: 1.6; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 20px;
 }
