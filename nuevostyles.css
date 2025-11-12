@@ -1,0 +1,207 @@
+/* Titulo principal */
+.title {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  margin: 70px;
+  animation: fadeInTitle 2s ease;
+}
+
+/* Animación para el título */
+@keyframes fadeInTitle {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Fondo de la pagina */
+body {
+  background-image: url("imagenes/Arequipa.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1E293B;
+  animation: fadeInBody 1.5s ease;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Navegador para navegar en todas las paginas (usar para cada pagina que se cree)*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(122, 28, 30, 0.9);
+  padding: 10px;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  animation: slideDownNav 1s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  backdrop-filter: blur(6px);
+}
+
+@keyframes slideDownNav {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+/*Diseño de cada enlace */
+nav a {
+  color: #FAFAFA;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #CBB26A;
+  transform: scale(1.08);
+}
+
+header { display: flex; flex-direction: column; }
+.class-container { display: flex; flex-direction: column; }
+
+/* Nosotros sección */
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(30, 41, 59, 0.85);
+  width: auto;
+  border-radius: 20px;
+  margin: 50px;
+  border-left: 8px solid #CBB26A;
+  animation: fadeInSection 1.5s ease;
+}
+
+#nosotros h2 {
+  color: #CBB26A;
+  margin: 10px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 8px #7A1C1E; }
+  to { text-shadow: 0 0 16px #CBB26A; }
+}
+
+/* párrafo de cada pregunta */
+.article-container p {
+  font-size: 25px;
+  color: #FAFAFA;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Imagenes seccion  */
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-item {
+  width: 400px;
+  height: auto;
+  margin: 5px;
+  border: solid 8px #7A1C1E;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: fadeUpImage 1.5s ease;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px rgba(203, 178, 106, 0.6);
+}
+
+@keyframes fadeUpImage {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Preguntas Frecuentes */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  animation: fadeInSection 1.5s ease;
+}
+
+.section-container h2 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px 20px;
+  color: #CBB26A;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #7A1C1E;
+  background-color: rgba(46, 64, 87, 0.9);
+  width: 700px;
+}
+.faq-item-text-content {
+  background-color: rgba(46, 64, 87, 0.9);
+  margin: 7.5px;
+  border-radius: 20px;
+  border: 2px solid #7A1C1E;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item-text-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(203, 178, 106, 0.4);
+}
+
+.faq-item-text-content h3 {
+  color: #FAFAFA;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* Pie de página (footer) */
+footer {
+  background-color: rgba(122, 28, 30, 0.9);
+  width: auto;
+  animation: fadeInFooter 2s ease;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.4);
+}
+
+footer p {
+  text-align: center;
+  color: #FAFAFA;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* Animaciones de la seccion (Preguntas , pie de página)*/
+@keyframes fadeInSection {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInFooter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#trajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#trajes .article-container{
+  width: 600px;
+  margin: 10px;
+}
