@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carnaval de Arequipa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nuevostyles.css">
 </head>
-<body>
-    <img src="imagenes/carnaval de arequipa.jpeg" width="550px">
-    <div class="informacion">
-        <h1>Carnaval de Arequipa</h1>
-        <p>El Carnaval de Arequipa es una de las festividades más alegres y coloridas del sur del Perú, 
-        donde se celebra la identidad, el amor y la alegría del pueblo arequipeño. Su traje típico 
-        destaca por su gran vistosidad: las mujeres visten blusas bordadas, faldas amplias y coloridas 
-        con cintas y encajes, además de sombreros adornados con flores y pañuelos; mientras que los varones 
-        lucen camisas blancas, pantalones oscuros, fajas de colores vivos y sombreros tradicionales. 
-        Este traje refleja la energía, la tradición y el espíritu festivo que caracterizan al Carnaval arequipeño.</p>
-    </div>
-    
-    <div class="precios">
-        <p><strong>Precio de alquiler:</strong>S/25<br>
-        <Strong>Precio de venta: </Strong>S/120</p>
-    </div>
-    <br><br>
 
-    <div class="boton-fomulario">
-        <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
-    </div>
-    <br><br>
-    
-    <!--Parte de "contactanos"-->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Visítanos en <em>Arequipa, Perú</em> o síguenos en nuestras redes:</p>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="Koketacce@gnail.com" target="_blank">Gmail</a>
-    </section>
+<body class="detalle-traje">
 
-    <footer>
-        <p>Avenída Jesús 2204 | Tel: +51 940 764 838</p>
-        <div>
-        <span>&copy; 2025 Tienda de Trajes</span>
+<header>
+    <nav>
+        <a href="nuevoindex.html">Sobre Nosotros</a>
+        <a href="trajes.html">Trajes</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
+</header>
+
+<main class="section-container">
+    <section id="trajes">
+        <div class="article-container">
+            <article class="faq-item-text-content">
+                <img src="imagenes/carnaval de arequipa.jpeg"
+                     alt="Carnaval de Arequipa"
+                     class="image-item">
+                <h3>Carnaval de Arequipa</h3>
+                <p>
+                    El Carnaval de Arequipa es una de las festividades más alegres y coloridas del sur del Perú,
+                    donde se celebra la identidad, el amor y la alegría del pueblo arequipeño. Su traje típico
+                    destaca por su gran vistosidad: las mujeres visten blusas bordadas, faldas amplias y coloridas
+                    con cintas y encajes, además de sombreros adornados con flores y pañuelos; mientras que los varones
+                    lucen camisas blancas, pantalones oscuros, fajas de colores vivos y sombreros tradicionales.
+                    Este traje refleja la energía, la tradición y el espíritu festivo que caracterizan al Carnaval arequipeño.
+                </p>
+                <p>
+                    <strong>Precio de alquiler:</strong> S/25 <br>
+                    <strong>Precio de venta:</strong> S/120
+                </p>
+                <div class="boton-formulario">
+                    <input type="button"
+                           value="Formulario de reserva"
+                           onclick="window.location.href='formulario.html'">
+                </div>
+            </article>
         </div>
-    </footer>
-    
+    </section>
+</main>
+
+<footer>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
+        <span>&copy; 2025 Tienda de Trajes</span>
+</footer>
+
 </body>
 </html>

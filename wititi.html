@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wititi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nuevostyles.css">
 </head>
-<body>
-    <img src="imagenes//imagen wititi.jpeg" width="500px">
-    <div class="informacion">
-        <h1>Wititi</h1>
-        <p>El Wititi es una emblemática danza del valle del Colca, 
-            reconocida como Patrimonio Cultural Inmaterial de la Humanidad 
-            por la UNESCO. Representa el amor, el cortejo y la unión entre 
-            los pueblos del Colca, combinando elegancia, alegría y tradición. 
-            El traje típico destaca por su colorido y fino bordado: los varones 
-            visten polleras, sombreros y chalecos bordados, simbolizando la igualdad 
-            y el respeto entre hombres y mujeres; mientras que las mujeres lucen faldas 
-            amplias, blusas adornadas, sombreros decorados y mantos de vivos colores. 
-            Este traje refleja la riqueza cultural, la identidad y el espíritu festivo 
-            del pueblo colqueño.</p>
-    </div>
-    
-    <div class="precios">
-        <p><strong>Precio de alquiler:</strong>S/20<br>
-        <Strong>Precio de venta: </Strong>S/80</p>
-    </div>
-    <br><br>
-    
-    <div class="boton-fomulario">
-        <input type="button" value="Formulario de reserva" onclick="window.location.href='formulario.html'">
-    </div>
-    <br><br>
-    
-    <!--Parte de "contactanos"-->
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Visítanos en <em>Arequipa, Perú</em> o síguenos en nuestras redes:</p>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="Koketacce@gnail.com" target="_blank">Gmail</a>
-    </section>
+<body class="detalle-traje">
 
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="nuevoindex.html">Sobre Nosotros</a>
+            <a href="trajes.html">Trajes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <h1 class="title">Wititi</h1>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="section-container">
+
+        <section id="trajes">
+            <div class="article-container">
+
+                <!-- Tarjeta principal -->
+                <article class="faq-item-text-content">
+
+                    <div class="image-container">
+                        <img src="imagenes/imagen wititi.jpeg" alt="Traje Wititi" class="image-item">
+                    </div>
+
+                    <p>
+                        El <strong>Wititi</strong> es una emblemática danza del valle del Colca,
+                        reconocida como Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.
+                        Representa el amor, el cortejo y la unión entre los pueblos del Colca,
+                        combinando elegancia, alegría y tradición.
+                        <br><br>
+                        El traje típico destaca por su colorido y fino bordado: los varones
+                        visten polleras, sombreros y chalecos bordados, simbolizando la igualdad
+                        y el respeto entre hombres y mujeres; mientras que las mujeres lucen
+                        faldas amplias, blusas adornadas, sombreros decorados y mantos de vivos colores.
+                    </p>
+
+                    <p>
+                        <strong>Precio de alquiler:</strong> S/20 <br>
+                        <strong>Precio de venta:</strong> S/80
+                    </p>
+
+                    <div class="boton-formulario">
+                        <input type="button" value="Formulario de reserva"
+                               onclick="window.location.href='formulario.html'">
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>Avenída Jesús 2204 | Tel: +51 940 764 838</p>
-        <div>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
         <span>&copy; 2025 Tienda de Trajes</span>
-        </div>
     </footer>
-
 </body>
 </html>
