@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alquiler y venta de trajes</title>
-  <link rel="stylesheet" href="nuevostyles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
 </head>
 <body>
 
   <!-- Encabezado -->
-  <header class="header">
-    <h1 class="title">Alquiler y venta de trajes</h1>
-    <img src="imagenes/Logo-tienda.png" alt="Logo de la tienda" class="logo">
-    
+  <header>
     <nav>
-      <ul class="nav-list">
-        <li><a href="#nosotros">Sobre Nosotros</a></li>
-        <li><a href="trajes.html">Trajes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="{{ url_for('trajes') }}">Trajes</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
     </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
   </header>
 
+  <!-- Cuerpo de la Página -->
   <main class="main-container">
     <!-- Sección genérica -->
-    <section class="section-container" id="nosotros">
-      <h2 class="section-title">Sobre Nosotros</h2>
+    <section  id="nosotros">
+      <h2>Sobre Nosotros</h2>
       <article class="article-container">
-        <p class="text-content">
+        <p>
           En esta <strong>Tienda de Trajes "Koketos"</strong> ofrecemos una amplia variedad, celebramos la 
           riqueza cultural del Perú a través de cada uno de nuestros trajes. Somos una tienda especializada 
           en la venta y alquiler de trajes típicos y de danza tradicional, elaborados con materiales de alta 
@@ -36,50 +33,40 @@
           Pampeña Arequipeña, hasta los vibrantes Caporales y Tinkus.
         </p>
         <div class="image-container">
-          <img src="imagenes/imagen wititi.jpeg" alt="Traje de danza Wititi" class="image-item">
-          <img src="imagenes/imagen montonero.jpeg" alt="Traje de danza montonero" class="image-item">
-          <img src="imagenes/imagen negrillos de chivay.jpg" alt="Traje de danza Turku" class="image-item">
+          <img src="{{ url_for('static', filename='imagenes/imagenWititi.jpeg') }}" alt="Traje de danza Wititi" class="image-item">
+          <img src="{{ url_for('static', filename='imagenes/imagenMontonero.jpeg') }}" alt="Traje de danza montonero" class="image-item">
+          <img src="{{ url_for('static', filename='imagenes/imagenNegrillosdeChivay.jpg') }}" alt="Traje de danza Turku" class="image-item">
         </div>
       </article>
     </section>
   
 
-  <!-- MAIN -->
-  <div class="main-container">
+  <!-- preguntas frecuentes -->
     <section id="preguntas" class="section-container">
-      <h2 class="section-title">Preguntas frecuentes</h2>
+      <h2>Preguntas frecuentes</h2>
 
       <div class="article-container">
-        <article class="faq-item text-content">
-          <h3>¿Cómo puedo alquilar un traje de danza?</h3>
-          <ol>
-            <li>Elija los trajes de la danza deseada.</li>
-            <li>Complete el formulario de reserva.</li>
-            <li>Recoge tu traje en tienda o solicita envío.</li>
-          </ol>
-        </article>
-
-        <article class="faq-item text-content">
+        <article class="faq-item-text-content">
           <h3>¿Con cuánta anticipación debo reservar mis trajes?</h3>
           <p>Lo recomendable es entre 3 y 5 días de anticipación, especialmente si es temporada de festividades o concursos.</p>
         </article>
 
-        <article class="faq-item text-content">
+        <article class="faq-item-text-content">
           <h3>¿Los trajes incluyen todos los accesorios?</h3>
           <p>Sí, cada traje se entrega con sus accesorios completos, como sombreros, mantos, botas o joyas, según el tipo de danza.</p>
         </article>
 
-        <article class="faq-item text-content">
+        <article class="faq-item-text-content">
           <h3>¿Qué pasa si el traje se daña o ensucia?</h3>
           <p>Pedimos cuidar cada prenda. Si ocurre algún daño, puede cubrirse con una tarifa adicional. En caso de pérdida o daño grave, se aplicará un cargo por reposición.</p>
         </article>
 
-        <article class="faq-item text-content">
+        <article class="faq-item-text-content">
           <h3>¿Cómo puedo hacer para comprar los trajes?</h3>
           <p>Le pedimos que se comunique con el número de contacto que aparece en la página, o puede acercarse a la tienda para atención personalizada.</p>
         </article>
 
-        <article class="faq-item text-content">
+        <article class="faq-item-text-content">
           <h3>¿Cómo se realiza el pago?</h3>
           <p>Puedes pagar mediante Yape o en efectivo al momento de la entrega.</p>
         </article>
@@ -87,12 +74,9 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer>
     <p>Avenida Jesús 2204 | Tel: +51 940 764 838</p>
-    <div>
-      <span>&copy; 2025 Tienda de Trajes</span>
-    </div>
+      <p>&copy; 2025 Tienda de Trajes</p>
   </footer>
-
 </body>
 </html>

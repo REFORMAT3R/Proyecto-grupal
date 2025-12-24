@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negrillos de Chivay</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
+</head>
+
+<body class="detalle-traje">
+
+<header>
+    <nav>
+      <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+      <a href="{{ url_for('trajes') }}">Trajes</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
+</header>
+
+<main class="section-container">
+
+    <section id="trajes">
+
+        <div class="article-container">
+
+            <article class="faq-item-text-content">
+
+                <img src="{{ url_for('static', filename='imagenes/imagenNegrillosdeChivay.jpg') }}"
+                     alt="Negrillos de Chivay"
+                     class="image-item">
+
+                <h3>Negrillos de Chivay</h3>
+
+                <p>
+                    La danza de los Negrillos de Chivay es una expresión cultural del
+                    valle del Colca que simboliza la fe, la alegría y la herencia afroandina
+                    en la celebración de la Navidad. Los danzantes representan a los antiguos
+                    esclavos africanos que rendían homenaje al Niño Jesús a través del canto y
+                    el baile. El traje típico es colorido y detallado: los hombres visten pantalón
+                    y camisa blancos adornados con cintas, chaleco bordado, sombrero decorado y un
+                    látigo o campanillas; las mujeres usan faldas amplias, blusas bordadas y mantos
+                    vistosos. Este traje refleja la mezcla de culturas, la devoción y el espíritu
+                    festivo del pueblo de Chivay.
+                </p>
+
+                <p>
+                    <strong>Precio de alquiler:</strong> S/40 <br>
+                    <strong>Precio de venta:</strong> S/125
+                </p>
+
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
+        <span>&copy; 2025 Tienda de Trajes</span>
+</footer>
+
+</body>
+</html>

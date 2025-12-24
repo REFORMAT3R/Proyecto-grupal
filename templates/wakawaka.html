@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waka Waka</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
+</head>
+
+<body class="detalle-traje">
+
+<header>
+    <nav>
+      <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+      <a href="{{ url_for('trajes') }}">Trajes</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
+</header>
+
+<main class="section-container">
+    <section id="trajes">
+        <div class="article-container">
+            <article class="faq-item-text-content">
+
+                <img src="{{ url_for('static', filename='imagenes/wakawaka.jpeg') }}"
+                     alt="Waka Waka"
+                     class="image-item">
+
+                <h3>Waka Waka</h3>
+
+                <p>
+                    El Waka Waka es una danza tradicional de origen andino que se
+                    presenta durante las fiestas patronales y carnavales,
+                    especialmente en el sur del Perú. Representa de forma burlesca
+                    y festiva las antiguas corridas de toros introducidas por los
+                    españoles, combinando humor, destreza y sátira social.
+                    El traje es llamativo y colorido: algunos danzantes visten
+                    como toreros con chaquetas adornadas y sombreros, mientras
+                    otros representan a los toros con máscaras, cuernos y pieles.
+                    Este traje refleja la creatividad, la alegría y la picardía
+                    del pueblo andino.
+                </p>
+
+                <p>
+                    <strong>Precio de alquiler:</strong> S/40 <br>
+                    <strong>Precio de venta:</strong> S/200
+                </p>
+
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
+
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
+        <span>&copy; 2025 Tienda de Trajes</span>
+</footer>
+
+</body>
+</html>

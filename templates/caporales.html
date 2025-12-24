@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caporales</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
+</head>
+
+<body class="detalle-traje">
+
+<header>
+    <nav>
+        <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+        <a href="{{ url_for('trajes') }}">Trajes</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
+</header>
+
+<main class="section-container">
+    <section id="trajes">
+        <div class="article-container">
+            <article class="faq-item-text-content">
+
+                <img
+                    src="{{ url_for('static', filename='imagenes/caporales.jpg') }}"
+                    alt="Caporales"
+                    class="image-item">
+
+                <h3>Caporales</h3>
+
+                <p>
+                    La danza de los Caporales es una de las más vibrantes y
+                    representativas del altiplano, caracterizada por su fuerza,
+                    elegancia y ritmo contagioso. Inspirada en la figura del capataz
+                    afroboliviano, simboliza el poder, el orgullo y la energía juvenil.
+                    El traje masculino resalta por su chaqueta bordada con lentejuelas,
+                    pantalón ajustado con botas altas y cascabeles que marcan el paso,
+                    además del sombrero típico; mientras que el traje femenino combina una
+                    falda corta bordada, blusa entallada y sombrero decorativo, destacando
+                    su gracia y dinamismo. Este traje refleja la pasión, el brillo y la
+                    intensidad de la danza de los Caporales, muy apreciada en las festividades
+                    arequipeñas y del sur del Perú.
+                </p>
+
+                <p>
+                    <strong>Precio de alquiler:</strong> S/50 <br>
+                    <strong>Precio de venta:</strong> S/140
+                </p>
+
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
+
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
+        <span>&copy; 2025 Tienda de Trajes</span>
+</footer>
+
+</body>
+</html>

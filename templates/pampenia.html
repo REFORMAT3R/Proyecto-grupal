@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pampeña</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
+</head>
+
+<body class="detalle-traje">
+
+<header>
+    <nav>
+      <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+      <a href="{{ url_for('trajes') }}">Trajes</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+    <h1 class="title">Alquiler y venta de trajes</h1>
+</header>
+
+<main class="section-container">
+    <section id="trajes">
+        <div class="article-container">
+            <article class="faq-item-text-content">
+                <img src="{{ url_for('static', filename='imagenes/imagenPampeña.jpg') }}"
+                     alt="Pampeña Arequipeña"
+                     class="image-item">
+
+                <h3>Pampeña Arequipeña</h3>
+                <p>
+                    La Pampeña Arequipeña es una danza alegre y coqueta que representa
+                    el galanteo y la picardía del enamoramiento en los valles de Arequipa.
+                    Su vestimenta resalta por sus colores vivos y detalles tradicionales:
+                    la mujer luce blusa blanca con encajes, falda amplia decorada con cintas
+                    y un elegante manto, acompañada de sombrero y pañuelo; mientras que el varón
+                    viste camisa blanca, pantalón oscuro, faja de color y sombrero arequipeño.
+                    Este traje refleja la elegancia, la tradición y el espíritu festivo del pueblo arequipeño.
+                </p>
+                <p>
+                    <strong>Precio de alquiler:</strong> S/20 <br>
+                    <strong>Precio de venta:</strong> S/90
+                </p>
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+        <p>
+            Contáctanos · Arequipa, Perú ·
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> ·
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> ·
+            <a href="mailto:Koketacce@gmail.com">Gmail</a>
+        </p>
+        <span>&copy; 2025 Tienda de Trajes</span>
+</footer>
+
+</body>
+</html>

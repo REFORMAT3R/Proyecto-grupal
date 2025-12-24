@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Alquiler</title>
-    <link rel="stylesheet" href="nuevostyles.css">
+    <title>Formulario de alquiler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
 </head>
 <body>
+    <header>
+      <nav>
+          <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+          <a href="{{ url_for('trajes') }}">Trajes</a>
+          <a href="{{ url_for('contacto') }}">Contacto</a>
+      </nav>
+      <h1 class="title">Alquiler y venta de trajes</h1>
+    </header>
+
     <!-- Formulario -->
     <section id="formulario">
       <h2>Formulario de Alquiler</h2>
@@ -38,7 +47,7 @@
         <label for="fecha">Fecha de alquiler:</label>
         <input type="date" id="fecha" name="fecha">
 
-        <input type="submit" value="Enviar" class="boton-fomulario">
+        <input type="submit" value="Enviar" onclick="window.location.href='confirmacion.html'">
       </form>
     </section>
 </body>
