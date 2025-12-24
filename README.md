@@ -45,7 +45,7 @@ El sistema está diseñado con una interfaz atractiva, validaciones en el formul
 
 | Nombre del integrante | Rol | Calificación |
 |----------------------|-----|--------------|
-| [Mamani Huayhua, Denny Joaquin] | Líder | [] |
-| [Guevara Aliaga, Omar Andree] | Integrante | [Nota] |
-| [Choquepuma Villafuerte, Luis Gerardo] | Integrante | [Nota] |
+| [Mamani Huayhua, Denny Joaquin] | Líder | [100%] |
+| [Guevara Aliaga, Omar Andree] | Integrante | [100%] |
+| [Choquepuma Villafuerte, Luis Gerardo] | Integrante | [100%] |
 
