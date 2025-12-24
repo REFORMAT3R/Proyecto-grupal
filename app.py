@@ -9,22 +9,18 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 def get_db_connection():
     return psycopg2.connect(DATABASE_URL)
 
-# Página principal
 @app.route('/')
 def nuevoindex():
     return render_template('nuevoindex.html')
 
-# Página de trajes
 @app.route('/trajes')
 def trajes():
     return render_template('trajes.html')
 
-# Página de contacto
 @app.route('/contacto')
 def contacto():
     return render_template('contacto.html')
 
-# Trajes individuales
 @app.route('/wititi')
 def wititi():
     return render_template('wititi.html')
@@ -57,12 +53,10 @@ def montonero():
 def caporales():
     return render_template('caporales.html')
 
-# Confirmación
 @app.route('/confirmacion')
 def confirmacion():
     return render_template('confirmacion.html')
 
-# Guardar reserva
 @app.route('/guardar_reserva', methods=['POST'])
 def guardar_reserva():
     nombre = request.form['nombre']
@@ -76,7 +70,7 @@ def guardar_reserva():
     cursor = conn.cursor()
 
     cursor.execute("""
-        INSERT INTO reservas (nombre, correo, telefono, traje, mensaje, fecha)
+        INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
         VALUES (%s, %s, %s, %s, %s, %s)
     """, (nombre, correo, celular, danza, parejas, fecha))
 
