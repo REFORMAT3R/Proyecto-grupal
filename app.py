@@ -1,13 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for
-import psycopg2
+#import psycopg2
 import os
 
 app = Flask(__name__)
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+#DATABASE_URL = os.environ.get("DATABASE_URL")
 
-def get_db_connection():
-    return psycopg2.connect(DATABASE_URL)
+#def get_db_connection():
+#    if not DATABASE_URL:
+#        raise Exception("DATABASE_URL no está configurado")
+#    return psycopg2.connect(DATABASE_URL)
+
 
 @app.route('/')
 def nuevoindex():
@@ -57,28 +60,28 @@ def caporales():
 def confirmacion():
     return render_template('confirmacion.html')
 
-@app.route('/guardar_reserva', methods=['POST'])
-def guardar_reserva():
-    nombre = request.form['nombre']
-    correo = request.form['correo']
-    celular = request.form['celular']
-    danza = request.form['danza']
-    parejas = request.form['parejas']
-    fecha = request.form['fecha']
+#@app.route('/guardar_reserva', methods=['POST'])
+#def guardar_reserva():
+#    nombre = request.form['nombre']
+#    correo = request.form['correo']
+ #   celular = request.form['celular']
+ #   danza = request.form['danza']
+  #  parejas = request.form['parejas']
+  #  fecha = request.form['fecha']
+#
+ #   conn = get_db_connection()
+ #   cursor = conn.cursor()
 
-    conn = get_db_connection()
-    cursor = conn.cursor()
+  #  cursor.execute("""
+  #      INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
+   #     VALUES (%s, %s, %s, %s, %s, %s)
+   # """, (nombre, correo, celular, danza, parejas, fecha))
 
-    cursor.execute("""
-        INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
-        VALUES (%s, %s, %s, %s, %s, %s)
-    """, (nombre, correo, celular, danza, parejas, fecha))
+ #   conn.commit()
+  #  cursor.close()
+   # conn.close()
 
-    conn.commit()
-    cursor.close()
-    conn.close()
-
-    return redirect(url_for('confirmacion'))
+   # return redirect(url_for('confirmacion'))
 
 if __name__ == "__main__":
     app.run()
