@@ -1,87 +1,98 @@
-from flask import Flask, render_template, request, redirect, url_for
-#import psycopg2
+import psycopg2
 import os
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-#DATABASE_URL = os.environ.get("DATABASE_URL")
+# ------------------------
+# Conexión PostgreSQL
+# ------------------------
+def get_db_connection():
+    return psycopg2.connect(
+        os.environ.get("DATABASE_URL"),
+        sslmode="require"
+    )
 
-#def get_db_connection():
-#    if not DATABASE_URL:
-#        raise Exception("DATABASE_URL no está configurado")
-#    return psycopg2.connect(DATABASE_URL)
-
-
-@app.route('/')
+# ------------------------
+# PÁGINAS
+# ------------------------
+@app.route("/")
 def nuevoindex():
-    return render_template('nuevoindex.html')
+    return render_template("nuevoindex.html")
 
-@app.route('/trajes')
+@app.route("/trajes")
 def trajes():
-    return render_template('trajes.html')
+    return render_template("trajes.html")
 
-@app.route('/contacto')
+@app.route("/contacto")
 def contacto():
-    return render_template('contacto.html')
+    return render_template("contacto.html")
 
-@app.route('/wititi')
+@app.route("/wititi")
 def wititi():
-    return render_template('wititi.html')
+    return render_template("wititi.html")
 
-@app.route('/tinkus')
+@app.route("/tinkus")
 def tinkus():
-    return render_template('tinkus.html')
+    return render_template("tinkus.html")
 
-@app.route('/pampenia')
+@app.route("/pampenia")
 def pampenia():
-    return render_template('pampenia.html')
+    return render_template("pampenia.html")
 
-@app.route('/negrillos')
+@app.route("/negrillos")
 def negrillos():
-    return render_template('negrillos.html')
+    return render_template("negrillos.html")
 
-@app.route('/wakawaka')
+@app.route("/wakawaka")
 def wakawaka():
-    return render_template('wakawaka.html')
+    return render_template("wakawaka.html")
 
-@app.route('/carnaval')
+@app.route("/carnaval")
 def carnaval():
-    return render_template('carnaval.html')
+    return render_template("carnaval.html")
 
-@app.route('/montonero')
+@app.route("/montonero")
 def montonero():
-    return render_template('montonero.html')
+    return render_template("montonero.html")
 
-@app.route('/caporales')
+@app.route("/caporales")
 def caporales():
-    return render_template('caporales.html')
+    return render_template("caporales.html")
 
-@app.route('/confirmacion')
+@app.route("/confirmacion")
 def confirmacion():
-    return render_template('confirmacion.html')
+    return render_template("confirmacion.html")
 
-#@app.route('/guardar_reserva', methods=['POST'])
-#def guardar_reserva():
-#    nombre = request.form['nombre']
-#    correo = request.form['correo']
- #   celular = request.form['celular']
- #   danza = request.form['danza']
-  #  parejas = request.form['parejas']
-  #  fecha = request.form['fecha']
-#
- #   conn = get_db_connection()
- #   cursor = conn.cursor()
+# ------------------------
+# GUARDAR RESERVA
+# ------------------------
+@app.route("/guardar_reserva", methods=["POST"])
+def guardar_reserva():
+    nombre = request.form["nombre"]
+    correo = request.form["correo"]
+    celular = request.form["celular"]
+    danza = request.form["danza"]
+    parejas = request.form["parejas"]
+    fecha = request.form["fecha"]
 
-  #  cursor.execute("""
-  #      INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
-   #     VALUES (%s, %s, %s, %s, %s, %s)
-   # """, (nombre, correo, celular, danza, parejas, fecha))
+    conn = get_db_connection()
+    cursor = conn.cursor()
 
- #   conn.commit()
-  #  cursor.close()
-   # conn.close()
+    cursor.execute("""
+        INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
+        VALUES (%s, %s, %s, %s, %s, %s)
+    """, (nombre, correo, celular, danza, parejas, fecha))
 
-   # return redirect(url_for('confirmacion'))
+    conn.commit()
+    cursor.close()
+    conn.close()
 
+    return redirect(url_for("confirmacion"))
+
+# ------------------------
+# MAIN
+# ------------------------
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
