@@ -1,17 +1,17 @@
-# 🎭 Plataforma Web de Alquiler y Venta de Trajes Folklóricos
+# Plataforma Web de Alquiler y Venta de Trajes Folklóricos
 
-## 👥 Nombre del equipo
+## Nombre del equipo
 Bad time sahur
 
-## 🌐 URL del proyecto hospedado
+## URL del proyecto hospedado
 https://venta-trajes.onrender.com
 
-## 📌 URL del repositorio
+## URL del repositorio
 https://github.com/REFORMAT3R/Proyecto-grupal.git
 
 ---
 
-## 📖 Descripción del proyecto
+## Descripción del proyecto
 Este proyecto consiste en una plataforma web desarrollada de manera grupal 
 cuyo objetivo es promocionar y gestionar el alquiler y venta de trajes folklóricos tradicionales. 
 La aplicación permite a los usuarios navegar por distintas páginas informativas sobre danzas típicas, 
@@ -21,7 +21,7 @@ El sistema está diseñado con una interfaz atractiva, validaciones en el formul
 
 ---
 
-## 🛠️ Lenguajes y tecnologías utilizadas
+## Lenguajes y tecnologías utilizadas
 - **HTML** – estructura de las páginas  
 - **CSS** – estilos, animaciones y diseño responsivo  
 - **JavaScript** – validaciones, animaciones e interacciones  
@@ -31,7 +31,7 @@ El sistema está diseñado con una interfaz atractiva, validaciones en el formul
 
 ---
 
-## 📂 Funcionalidades principales
+## Funcionalidades principales
 - Navegación por páginas informativas de danzas
 - Visualización de trajes folklóricos
 - Formulario de reserva con validaciones
@@ -41,7 +41,7 @@ El sistema está diseñado con una interfaz atractiva, validaciones en el formul
 
 ---
 
-## 👤 Integrantes del equipo y calificación
+## Integrantes del equipo y calificación
 
 | Nombre del integrante | Rol | Calificación |
 |----------------------|-----|--------------|
