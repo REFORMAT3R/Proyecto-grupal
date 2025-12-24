@@ -24,7 +24,7 @@
             <article class="faq-item-text-content">
 
                 <img
-                    src="{{ url_for('static', filename='img/imagenes/tinkus.jpeg') }}"
+                    src="{{ url_for('static', filename='imagenes/tinkus.jpeg') }}"
                     alt="Tinkus"
                     class="image-item">
 
@@ -48,13 +48,9 @@
                     <strong>Precio de venta:</strong> S/75
                 </p>
 
-                <div class="boton-formulario">
-                    <input
-                        type="button"
-                        value="Formulario de reserva"
-                        onclick="window.location.href='formulario.html'">
-                </div>
-
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
             </article>
         </div>
     </section>

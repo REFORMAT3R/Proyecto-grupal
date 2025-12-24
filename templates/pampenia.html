@@ -22,7 +22,7 @@
     <section id="trajes">
         <div class="article-container">
             <article class="faq-item-text-content">
-                <img src="{{ url_for('static', filename='img/imagenes/imagenPampeña.jpg') }}"
+                <img src="{{ url_for('static', filename='imagenes/imagenPampeña.jpg') }}"
                      alt="Pampeña Arequipeña"
                      class="image-item">
 
@@ -40,12 +40,9 @@
                     <strong>Precio de alquiler:</strong> S/20 <br>
                     <strong>Precio de venta:</strong> S/90
                 </p>
-                <div class="boton-formulario">
-                    <input
-                        type="button"
-                        value="Formulario de reserva"
-                        onclick="window.location.href='formulario.html'">
-                </div>
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
             </article>
         </div>
     </section>

@@ -22,7 +22,7 @@
     <section id="trajes">
         <div class="article-container">
             <article class="faq-item-text-content">
-                <img src="{{ url_for('static', filename='img/imagenes/imagenMontonero.jpeg') }}"
+                <img src="{{ url_for('static', filename='imagenes/imagenMontonero.jpeg') }}"
                      alt="Montonero Arequipeño"
                      class="image-item">
                 <h3>Montonero Arequipeño</h3>
@@ -40,12 +40,9 @@
                     <strong>Precio de alquiler:</strong> S/25 <br>
                     <strong>Precio de venta:</strong> S/120
                 </p>
-                <div class="boton-formulario">
-                    <input
-                        type="button"
-                        value="Formulario de reserva"
-                        onclick="window.location.href='formulario.html'">
-                </div>
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
             </article>
         </div>
     </section>

@@ -23,7 +23,7 @@
         <div class="article-container">
             <article class="faq-item-text-content">
 
-                <img src="{{ url_for('static', filename='img/imagenes/wakawaka.jpeg') }}"
+                <img src="{{ url_for('static', filename='imagenes/wakawaka.jpeg') }}"
                      alt="Waka Waka"
                      class="image-item">
 
@@ -47,12 +47,9 @@
                     <strong>Precio de venta:</strong> S/200
                 </p>
 
-                <div class="boton-formulario">
-                    <input
-                        type="button"
-                        value="Formulario de reserva"
-                        onclick="window.location.href='formulario.html'">
-                </div>
+                <a href="{{ url_for('formulario') }}" class="boton-formulario">
+                    Formulario de reserva
+                </a>
 
             </article>
         </div>
