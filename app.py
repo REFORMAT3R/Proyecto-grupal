@@ -69,26 +69,31 @@ def confirmacion():
 # ------------------------
 @app.route("/guardar_reserva", methods=["POST"])
 def guardar_reserva():
-    nombre = request.form["nombre"]
-    correo = request.form["correo"]
-    celular = request.form["celular"]
-    danza = request.form["danza"]
-    parejas = request.form["parejas"]
-    fecha = request.form["fecha"]
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
 
-    conn = get_db_connection()
-    cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
+            VALUES (%s, %s, %s, %s, %s, %s)
+        """, (
+            request.form["nombre"],
+            request.form["correo"],
+            request.form["celular"],
+            request.form["danza"],
+            int(request.form["parejas"]),
+            request.form["fecha"] or None
+        ))
 
-    cursor.execute("""
-        INSERT INTO reservas (nombre, correo, telefono, traje, parejas, fecha)
-        VALUES (%s, %s, %s, %s, %s, %s)
-    """, (nombre, correo, celular, danza, parejas, fecha))
+        conn.commit()
+        cursor.close()
+        conn.close()
 
-    conn.commit()
-    cursor.close()
-    conn.close()
+        return redirect(url_for("confirmacion"))
 
-    return redirect(url_for("confirmacion"))
+    except Exception as e:
+        return f"ERROR AL GUARDAR: {e}"
+
 
 # ------------------------
 # MAIN
