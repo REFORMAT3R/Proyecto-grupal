@@ -416,3 +416,11 @@ footer a:hover {
   transform: scale(1.08);
   box-shadow: 0 10px 30px rgba(203, 178, 106, 0.7);
 }
+header h1 {
+  margin-top: 140px;
+  text-align: center;
+  font-size: 60px;
+  color: #7A1C1E;
+  text-shadow: 0 3px 10px rgba(122, 28, 30, 0.5);
+  animation: fadeInSection 1.5s ease;
+}
