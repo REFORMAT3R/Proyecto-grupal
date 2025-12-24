@@ -375,3 +375,44 @@ footer a:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(203, 178, 106, 0.6);
 }
+/* Confirmacion */
+#Gracias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+}
+
+#Gracias section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 60px 80px;
+  border-radius: 25px;
+  border: 3px solid #CBB26A;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInSection 1.5s ease;
+}
+
+#Gracias p {
+  font-size: 28px;
+  color: #1E293B;
+  margin-bottom: 40px;
+}
+
+/* Enlace volver al inicio */
+#enlace-inicio a {
+  display: inline-block;
+  background: linear-gradient(135deg, #7A1C1E, #CBB26A);
+  color: #ffffff;
+  font-size: 24px;
+  padding: 16px 50px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#enlace-inicio a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(203, 178, 106, 0.7);
+}
