@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alquiler y venta de trajes</title>
-  <link rel="stylesheet" href="nuevostyles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
 </head>
 <body>
 
@@ -12,8 +12,8 @@
   <header>
     <nav>
         <a href="#nosotros">Sobre Nosotros</a>
-        <a href="trajes.html">Trajes</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="{{ url_for('trajes') }}">Trajes</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
     </nav>
     <h1 class="title">Alquiler y venta de trajes</h1>
   </header>
@@ -33,9 +33,9 @@
           Pampeña Arequipeña, hasta los vibrantes Caporales y Tinkus.
         </p>
         <div class="image-container">
-          <img src="imagenes/imagen wititi.jpeg" alt="Traje de danza Wititi" class="image-item">
-          <img src="imagenes/imagen montonero.jpeg" alt="Traje de danza montonero" class="image-item">
-          <img src="imagenes/imagen negrillos de chivay.jpg" alt="Traje de danza Turku" class="image-item">
+          <img src="{{ url_for('static', filename='img/imagenes/imagenWititi.jpeg') }}" alt="Traje de danza Wititi" class="image-item">
+          <img src="{{ url_for('static', filename='img/imagenes/imagenMontonero.jpeg') }}" alt="Traje de danza montonero" class="image-item">
+          <img src="{{ url_for('static', filename='img/imagenes/imagenNegrillosdeChivay.jpg') }}" alt="Traje de danza Turku" class="image-item">
         </div>
       </article>
     </section>

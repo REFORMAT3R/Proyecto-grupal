@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wititi</title>
-    <link rel="stylesheet" href="nuevostyles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
 </head>
 <body class="detalle-traje">
 
     <!-- HEADER -->
     <header>
         <nav>
-            <a href="nuevoindex.html">Sobre Nosotros</a>
-            <a href="trajes.html">Trajes</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+      <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+      <a href="{{ url_for('trajes') }}">Trajes</a>
+      <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
 
         <h1 class="title">Wititi</h1>
     </header>
@@ -29,7 +29,7 @@
                 <article class="faq-item-text-content">
 
                     <div class="image-container">
-                        <img src="imagenes/imagen wititi.jpeg" alt="Traje Wititi" class="image-item">
+                        <img src="{{ url_for('static', filename='img/imagenes/imagenWititi.jpeg') }}" alt="Traje Wititi" class="image-item">
                     </div>
 
                     <p>

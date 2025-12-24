@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carnaval de Arequipa</title>
-    <link rel="stylesheet" href="nuevostyles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevostyles.css') }}">
 </head>
 
 <body class="detalle-traje">
 
 <header>
     <nav>
-        <a href="nuevoindex.html">Sobre Nosotros</a>
-        <a href="trajes.html">Trajes</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="{{ url_for('nuevoindex') }}">Sobre Nosotros</a>
+        <a href="{{ url_for('trajes') }}">Trajes</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
     </nav>
     <h1 class="title">Alquiler y venta de trajes</h1>
 </header>
@@ -22,7 +22,7 @@
     <section id="trajes">
         <div class="article-container">
             <article class="faq-item-text-content">
-                <img src="imagenes/carnaval de arequipa.jpeg"
+                <img src="{{ url_for('static', filename='img/imagenes/CarnavaldeArequipa.jpeg') }}"
                      alt="Carnaval de Arequipa"
                      class="image-item">
                 <h3>Carnaval de Arequipa</h3>
